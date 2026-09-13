@@ -1,1 +1,163 @@
+/* ---------- GENERAL ---------- */
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    background: #f4f2ec;
+}
+
+
+/* ---------- NAVIGATION ---------- */
+
+header {
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 30px 6%;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 35px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+button {
+    padding: 12px 25px;
+    border: none;
+    background: white;
+    cursor: pointer;
+}
+
+
+/* ---------- HERO ---------- */
+
+.hero {
+    min-height: 90vh;
+
+    display: flex;
+    align-items: center;
+
+    padding: 120px 8%;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.35),
+            rgba(0, 0, 0, 0.45)
+        ),
+        url("images/hero.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.location {
+    letter-spacing: 4px;
+    font-size: 13px;
+    margin-bottom: 25px;
+}
+
+h1 {
+    font-size: clamp(60px, 9vw, 130px);
+    line-height: 0.85;
+    letter-spacing: -3px;
+}
+
+.tagline {
+    font-size: 22px;
+    margin-top: 30px;
+}
+
+
+/* ---------- BUTTONS ---------- */
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 40px;
+}
+
+.primary-button,
+.secondary-button {
+    padding: 15px 25px;
+    text-decoration: none;
+}
+
+.primary-button {
+    background: white;
+    color: black;
+}
+
+.secondary-button {
+    border: 1px solid white;
+    color: white;
+}
+
+
+/* ---------- INTRO ---------- */
+
+.intro {
+    color: #18251c;
+    text-align: center;
+
+    padding: 120px 20px;
+
+    max-width: 900px;
+    margin: auto;
+}
+
+.section-label {
+    font-size: 12px;
+    letter-spacing: 4px;
+    margin-bottom: 25px;
+}
+
+.intro h2 {
+    font-size: 50px;
+    line-height: 1.1;
+    margin-bottom: 30px;
+}
+
+.intro p:last-child {
+    max-width: 600px;
+    margin: auto;
+    line-height: 1.8;
+}
+
+
+/* ---------- FOOTER ---------- */
+
+footer {
+    background: #18251c;
+    padding: 30px;
+    text-align: center;
+    font-size: 13px;
+}
